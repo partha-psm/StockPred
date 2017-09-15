@@ -18,7 +18,7 @@ from.date <- '2015-01-01'
 getSymbols(ticker, from=from.date)
 quote.data <- eval(as.symbol(ticker))
 
-#Inspecting the Values of the T Indicator
+#Inspecting the Values of the T Indicator using candlechart
 candleChart(last(quote.data,'3 months'),theme='white',TA=NULL)
 avgPrice <- function(p) apply(HLC(p),1,mean)
 addAvgPrice <- newTA(FUN=avgPrice,col=1,legend='AvgPrice')
