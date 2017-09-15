@@ -34,4 +34,4 @@ myMACD <- function(x) MACD(Cl(x))[,2]
 mySAR <- function(x) SAR(cbind(Hi(x),Cl(x))) [,1]
 myVolat <- function(x) volatility(OHLC(x),calc="garman")[,1]
 
-# StockPred
+# StockPred changes
